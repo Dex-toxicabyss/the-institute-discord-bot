@@ -7,7 +7,7 @@ Automated 24/7 Discord broadcast hub, match prediction engine, and party-finding
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Railway](https://img.shields.io/badge/Hosted_on-Railway_24%2F7-0B0D0E?style=flat-square&logo=railway&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-10B981?style=flat-square)
+![License](https://img.shields.io/badge/License-GPLv3-DC2626?style=flat-square&logo=gnu&logoColor=white?style=flat-square)
 
 ---
 
