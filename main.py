@@ -1762,9 +1762,8 @@ async def refresh_leaderboard(interaction: discord.Interaction):
     
     await lb_ch.send(embed=embed)
     await interaction.followup.send("✅ Papan klasemen Hall of Fame berhasil diperbarui di `#📊・leaderboards`!", ephemeral=True)
-
+import addons_all_in_one
+addons_all_in_one.setup_all_in_one(bot, GUILD, db, cursor, get_channel)
 
 bot.run(TOKEN)
 
-import addons_all_in_one
-addons_all_in_one.setup_all_in_one(bot, GUILD, db, cursor, get_channel)
