@@ -820,10 +820,10 @@ def setup_all_in_one(bot: discord.Client, guild_obj: discord.Object, db, cursor,
                     if not cursor.fetchone():
                         cursor.execute(
                             """
-                            INSERT INTO matches (external_id, game, team_a, team_b, start_time, status, score_a, score_b, channel_id, season)
-                            VALUES (?, ?, ?, ?, ?, 'FINISHED', ?, ?, 2, ?)
+                            INSERT INTO matches (external_id, game, team_a, team_b, start_time, status, score_a, score_b, channel_id, season, created_at)
+                            VALUES (?, ?, ?, ?, ?, 'FINISHED', ?, ?, 2, ?, ?)
                             """,
-                            (ext_id, game_key, ta, tb, f"{season_name} ({stage_note})", sa, sb, season_name),
+                            (ext_id, game_key, ta, tb, f"{season_name} ({stage_note})", sa, sb, season_name, now_utc.strftime("%Y-%m-%d %H:%M:%S")),
                         )
         db.commit()
 
