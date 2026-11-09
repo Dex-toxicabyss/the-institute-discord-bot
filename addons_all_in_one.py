@@ -1400,4 +1400,7 @@ def setup_all_in_one(bot: discord.Client, guild_obj: discord.Object, db, cursor,
         else:
             await interaction.response.send_message("Bot tidak berada di voice channel.", ephemeral=True)
 
-    enforce_7day_window_and_seed_seasons()
+    try:
+        enforce_7day_window_and_seed_seasons()
+    except Exception as e:
+        print('Seed warning:', e, flush=True)
